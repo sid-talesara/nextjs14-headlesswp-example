@@ -43,14 +43,12 @@ export default async function PostList() {
         {posts.map((post) => (
           <div key={post.uri} className="card">
             <Link href={`/post/${post.uri}`}>
-              <a>
-                <h3>{post.title}</h3>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: post.content.slice(0, 200) + "...",
-                  }}
-                />
-              </a>
+              <h3>{post.title}</h3>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: post.content.slice(0, 200) + "...",
+                }}
+              />
             </Link>
           </div>
         ))}
