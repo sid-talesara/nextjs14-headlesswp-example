@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Rubik } from "next/font/google";
-import CookieConsent from "./components/CookieConsent";
-// components
+import CookieBotConsent from "./components/CookieBotConsent";
 import Navbar from "./components/Navbar";
 
 const rubik = Rubik({ subsets: ["latin"] });
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={rubik.className}>
         <Navbar />
         {children}
-        <CookieConsent />
+        <CookieBotConsent />
         <footer
           style={{ textAlign: "center", marginTop: "20px", fontSize: "14px" }}
         >
