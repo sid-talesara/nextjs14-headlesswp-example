@@ -6,7 +6,7 @@ const CookieDeclaration = () => {
     const cookieDeclarationScript = document.createElement("script");
     cookieDeclarationScript.id = "CookieDeclaration";
     cookieDeclarationScript.src =
-      "https://consent.cookiebot.com/your-cookiebot-id/cd.js";
+      "https://consent.cookiebot.com/your-cookie-declaration.js";
     cookieDeclarationScript.setAttribute("type", "text/javascript");
     cookieDeclarationScript.setAttribute("async", "true");
     document.body.appendChild(cookieDeclarationScript);
