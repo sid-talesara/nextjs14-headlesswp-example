@@ -16,7 +16,7 @@ async function getPosts() {
   `;
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
+    `https://editor4.babynama.com/graphql?query=${encodeURIComponent(
       query
     )}`,
     {
